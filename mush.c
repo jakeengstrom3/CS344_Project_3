@@ -38,6 +38,9 @@ int main (){
             }
             continue;
         }
+        if(strcmp(argv[0], "exit") == 0){
+            exit(0);
+        }
 
         pid_t pid = fork();
         if(pid == 0){
